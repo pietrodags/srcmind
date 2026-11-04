@@ -1,0 +1,4 @@
+interface:
+  display_name: "devmind"
+  short_description: "Learn from any code, from architecture down to every line"
+  default_prompt: "$devmind explain this code in concentric circles, from the whys of its architecture down to its lines, with Programmer and Code voices and one focus per turn: [paste the code or name the file and function]"
