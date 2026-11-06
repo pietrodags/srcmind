@@ -1,4 +1,4 @@
-# devmind
+# srcmind
 
 An agent skill that teaches beginners to read and learn from code in any language through a dialogue between two voices — **Programmer** and **Code** — moving from the *why* of the architecture down to each line.
 
@@ -6,13 +6,13 @@ Works with Claude Code, Codex, Cursor and any agent that supports [Agent Skills]
 
 ## Why
 
-Most code explanations jump straight to syntax. devmind starts with the need a piece of code solves, then the design decisions behind it, and only then the implementation — so you learn to *think* the way the code was built, not just read it.
+Most code explanations jump straight to syntax. srcmind starts with the need a piece of code solves, then the design decisions behind it, and only then the implementation — so you learn to *think* the way the code was built, not just read it.
 
 It's meant for people starting out: open-source projects, a codebase you just joined, a tutorial repo or a snippet you found. Programming concepts are introduced in plain words the first time they matter.
 
 ## How it works
 
-devmind walks through code in **concentric circles**:
+srcmind walks through code in **concentric circles**:
 
 1. **Project purpose and nearby architecture** — what the module contributes to the project and how work is split between the piece and its collaborators.
 2. **The piece's role** — why it exists and where its responsibility ends.
@@ -32,14 +32,14 @@ Grounded by design: it only states relationships it can verify in your project, 
 ## Install
 
 ```bash
-npx skills add pietrodags/devmind
+npx skills add pietrodags/srcmind
 ```
 
 The CLI detects your installed agents and lets you choose where to install. Useful flags:
 
 ```bash
-npx skills add pietrodags/devmind -g             # install globally (user-level)
-npx skills add pietrodags/devmind -a claude-code # target a specific agent
+npx skills add pietrodags/srcmind -g             # install globally (user-level)
+npx skills add pietrodags/srcmind -a claude-code # target a specific agent
 ```
 
 ### Manual install
@@ -47,7 +47,7 @@ npx skills add pietrodags/devmind -a claude-code # target a specific agent
 Copy this folder into your agent's skills directory, e.g. for Claude Code:
 
 ```bash
-git clone https://github.com/pietrodags/devmind ~/.claude/skills/devmind
+git clone https://github.com/pietrodags/srcmind ~/.claude/skills/srcmind
 ```
 
 ## Usage
@@ -55,18 +55,18 @@ git clone https://github.com/pietrodags/devmind ~/.claude/skills/devmind
 Invoke it explicitly or just ask about some code:
 
 ```
-/devmind explain src/report.py
+/srcmind explain src/report.py
 ```
 
 ```
-Explain this code with devmind: <paste code>
+Explain this code with srcmind: <paste code>
 ```
 
 ```
-devmind, go straight line by line through the handleLogin function in auth.js
+srcmind, go straight line by line through the handleLogin function in auth.js
 ```
 
-devmind replies in the language you write in.
+srcmind replies in the language you write in.
 
 ## Related
 
@@ -75,7 +75,7 @@ devmind replies in the language you write in.
 ## Files
 
 ```
-devmind/
+srcmind/
 ├── SKILL.md            # skill instructions
 └── agents/openai.yaml  # Codex UI metadata
 ```

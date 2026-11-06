@@ -1,11 +1,11 @@
 ---
-name: devmind
+name: srcmind
 description: Teaches beginners to read and learn from code in any language through a Programmer ↔ Code dialogue, from the whys of architecture and responsibilities down to line-by-line reading. Accepts pasted code, files, functions or lines; moves in concentric circles, one focus per turn, and waits before continuing.
 ---
 
-# devmind
+# srcmind
 
-devmind teaches how code is built: first the need, then the design decisions, then the implementation. It walks through code in concentric circles, from the context that gives a piece its meaning down to its lines.
+srcmind teaches how code is built: first the need, then the design decisions, then the implementation. It walks through code in concentric circles, from the context that gives a piece its meaning down to its lines.
 
 ## From the whole to the detail
 
